@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en-nz">
+
+<head>
+    <meta charset="utf-8">
+    <!-- Scale to fit device screen size -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Page title -->
+    <title>Cairns Electronics Home page</title>
+    
+    <!-- Link to external CSS style sheet -->
+    <link rel="stylesheet" href="../CSS/my-css.css">
+    
+    <!-- Link to Image Slider-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+</head>
+
+<body>
+    <script type="text/javascript" src="../js/clearLocalStorage.js"></script>
+
+    <!-- The main navigation links that are used across all pages of the website -->
+    <nav class="topnav">
+        <input type="text" placeholder="Search..">
+        <script type="text/javascript" src=""></script>
+        <a href= "ShoppingCart/ShoppingCart.html"><input type="submit" value="View Cart" class="myViewCart"></a>
+        <a href="#footer" class="topnav">Help</a>
+        <a href="Shop/Shop.html" class="topnav">Shop</a>
+        <a href="#about" class="topnav">About</a>
+        <a href="Home.html" class="topnav">Home</a>
+    </nav>
+    
+    <!-- The main header for the page -->
+    <header class="header">
+        <h1>Cairns Electronic Solutions</h1>
+        <br>
+        <a href="ProductDetails/ProductDetails.html"><img class="images" src="Images/p2.jpg"  alt=""></a>
+        <a href="ProductDetails/ProductDetails.html"><img class="images" src="Images/p2.jpg"  alt=""></a>
+        <a href="ProductDetails/ProductDetails.html"><img class="images" src="Images/p2.jpg"  alt=""></a><br><br>
+        <a href= "Shop/Shop.html"><input type="submit" value="Shop Now" class="btnShopNow"></a>
+        <br><br>
+    </header>
+
+    <!-- 'Featured Products' section -->
+    <div class="mainOne"> 
+        <h2>Featured Products</h2>
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img src="Images/p9.jpg"></div>
+              <div class="swiper-slide"><img src="Images/p9.jpg"></div>
+              <div class="swiper-slide"><img src="Images/p9.jpg"></div>
+              <div class="swiper-slide"><img src="Images/p9.jpg"></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </div>
+    <br>
+    <br>
+    
+    <!-- 'Newsletter' section -->
+    <div class="row">
+        <div class="column2">
+            <h2>Newsletter</h2>
+            <p>NewsletterLorem ipsum dolor sit amet, consectuter adipiscing elit. Nulia quam velit, vulputate eu pharetra nec, mattis ac neque.</p>
+        </div>
+        <div class="column2">
+            <h2>&nbsp;</h2>
+            <input type="text" placeholder="Email Address" class="myEmail" style="width:400px">
+            <input type="submit" value="Subscribe" class="mySubscribe">
+        </div>
+    </div>
+    
+    <!-- 'Products' section -->
+    <div class="row">
+        <br>
+        <div class="column">
+            <br>
+            <a href="ProductDetails/ProductDetails.html"><img src="Images/p4.jpg"  alt=""></a>
+            <p>PRODUCT NAME<br>$300</p>
+        </div>
+        <div class="column">
+            <p><a href="ProductDetails/ProductDetails.html"><img src="Images/p7.jpg" alt=""></a><br>PRODUCT NAME<br>$300</p>
+            <p><a href="ProductDetails/ProductDetails.html"><img src="Images/p7.jpg" alt=""></a><br>PRODUCT NAME<br>$300</p>
+        </div> 
+        <div class="column">
+            <p><a href="ProductDetails/ProductDetails.html"><img src="Images/p7.jpg" alt=""></a><br>PRODUCT NAME<br>$300</p>
+            <p><a href="ProductDetails/ProductDetails.html"><img src="Images/p7.jpg" alt=""></a><br>PRODUCT NAME<br>$300</p>
+        </div>
+    </div>
+    
+    <!-- 'About Your Shop' section -->
+    <div id="about">
+        <div class="mainTwo" style="text-align: center">
+            <h2>About Your Shop</h2>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque<br>
+            laudantium totam rem aperiam, eaqueipsa quae ab illo inventore veritatis et quasi<br></p> 
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer" class="footer">
+        <div class="row">
+            <!-- Column 1: 'Image/Address of store' -->
+            <div class="column">
+                <br>
+                <img src="Images/p1.jpg"  alt="">
+                <p>1717 Harrison St, San Francisco<br>
+                CA 94103, USA</p> 
+            </div>
+                
+            <!-- Column 2: 'Menu Table' -->
+            <div class="column">
+                <table class="table">
+                    <tr>
+                        <td>MAIN MENU</td>
+                        <td>COMPANY</td>
+                        <td>DISCOVER</td>
+                        <td>FIND US ON</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./Home.html" style="color:white">Home</a></td>
+                        <td>The Company</td>
+                        <td>The Team</td>
+                        <td>Facebook</td>
+                    <tr>
+                        <td><a href="./Home.html" style="color:white">About</a></td>
+                        <td>Careers</td>
+                        <td>Our History</td>
+                        <td>Twitter</td>
+                    <tr>
+                        <td><a href="Shop/Shop.html" style="color:white">Shop</a></td>
+                        <td>Press</td>
+                        <td>Brand Motto</td>
+                        <td>Instagram</td>
+                    <tr>
+                        <td><a href="./Home.html" style="color:white">Help</a></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                </table>
+            </div>
+        </div>
+
+        <!-- 'Back To Top' button -->
+        <button class="myBackToTop" onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    </footer>
+
+    <!-- 'Scroll Back To Top Button' script -->
+    <script type="text/javascript" src="../js/scrollBackToTopButton.js"></script>
+
+    
+    <!-- 'Image Slider' Scripts (unable to move below scripts to external JavaScript file due to issue getting slider to function) -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
+
+            loop: true,
+            
+            pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            },
+            
+            navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+            },
+        }); 
+    </script> 
+
+</body>
+    
+</html>
